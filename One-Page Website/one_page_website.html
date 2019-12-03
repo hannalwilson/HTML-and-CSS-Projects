@@ -48,11 +48,22 @@
 		</p>
 		
 	<!-- SEATTLE PICTURES -->
-	
-			<img src="./images/fish_market.jpg" width="150" height="200">
-			<img src="./images/space_needle.jpg" width="150" height="200">
-			<img src="./images/glass_museum.jpg" width="150" height="200">
-			<img src="./images/gum_wall.jpg" width="150" height="200">
+
+		<div class="row">
+			<div class="column">
+				<img src="./images/fish_market.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" width="150" height="200">
+			</div>
+			<div class="column">
+				<img src="./images/space_needle.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" width="150" height="200">
+			</div>
+			<div class="column">
+				<img src="./images/glass_museum.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" width="150" height="200">
+			</div>
+			<div class="column">
+				<img src="./images/gum_wall.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" width="150" height="200">
+			</div>
+		</div>
+
 	<br>
 	
 	<!-- SEATTLE VIDEO -->
@@ -77,11 +88,22 @@
 		</p>
 		
 	<!-- COAST PICTURES -->
+
+		<div class="row">
+			<div class="column">
+				<img src="./images/marina.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" width="150" height="200">
+			</div>
+			<div class="column">
+				<img src="./images/cheese.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" width="150" height="200">
+			</div>
+			<div class="column">
+				<img src="./images/lighthouse.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow" width="150" height="200">
+			</div>
+			<div class="column">
+				<img src="./images/octopus_tree.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow" width="150" height="200">
+			</div>
+		</div>
 	
-		<img src="./images/marina.jpg" width="150" height="200">
-		<img src="./images/cheese.jpg" width="150" height="200">
-		<img src="./images/lighthouse.jpg" width="150" height="200">
-		<img src="./images/octopus_tree.jpg" width="150" height="200">
 	</div>
 	</section>
 	
@@ -99,14 +121,141 @@
 		</p>
 		
 	<!-- GORGE PICTURES -->	
-		
-		<img src="./images/waterfall.jpg" width="150" height="200">
-		<img src="./images/gorge.jpg" width="250" height="200">
-		<img src="./images/jumping.jpg" width="150" height="200">
+
+		<div class="row">
+			<div class="column">
+				<img src="./images/waterfall.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow" width="150" height="200">
+			</div>
+			<div class="column">
+				<img src="./images/gorge.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow" width="250" height="200">
+			</div>
+			<div class="column">
+				<img src="./images/jumping.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow" width="150" height="200">
+			</div>
+		</div>
+
 	</div>
 	</section>
 	
 	<!-- END GORGE -->
+
+	<!-- THE MODAL -->
+
+	<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+
+			<div class="mySlides">
+				<div class="numbertext">1 / 11</div>
+				<img src="./images/fish_market.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">2 / 11</div>
+				<img src="./images/space_needle.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">3 / 11</div>
+				<img src="./images/glass_museum.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">4 / 11</div>
+				<img src="./images/gum_wall.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">5 / 11</div>
+				<img src="./images/marina.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">6 / 11</div>
+				<img src="./images/cheese.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">7 / 11</div>
+				<img src="./images/lighthouse.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">8 / 11</div>
+				<img src="./images/octopus_tree.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">9 / 11</div>
+				<img src="./images/waterfall.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">10 / 11</div>
+				<img src="./images/gorge.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">11 / 11</div>
+				<img src="./images/jumping.jpg" style="width:100%">
+			</div>
+
+			<!--CONTROLS -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<!-- CAPTIONS-->
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+
+			<!--THUMBNAIL IMAGES-->
+			<div class="column">
+				<img class="demo" src="./images/fish_market.jpg" onclick="currentSlide(1)" alt="Fish Market" width="150" height="200">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="./images/space_needle.jpg" onclick="currentSlide(2)" alt="Space Needle" width="150" height="200">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="./images/glass_museum.jpg" onclick="currentSlide(3)" alt="Glass Museum" width="150" height="200">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="./images/gum_wall.jpg" onclick="currentSlide(4)" alt="Gum Wall" width="150" height="200">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="./images/marina.jpg" onclick="currentSlide(5)" alt="Marina" width="150" height="200">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="./images/cheese.jpg" onclick="currentSlide(6)" alt="Tillamook Factory" width="150" height="200">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="./images/lighthouse.jpg" onclick="currentSlide(7)" alt="Lighthouse" width="150" height="200">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="./images/octopus_tree.jpg" onclick="currentSlide(8)" alt="Octopus Tree" width="150" height="200">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="./images/waterfall.jpg" onclick="currentSlide(9)" alt="Waterfall" width="150" height="200">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="./images/gorge.jpg" onclick="currentSlide(10)" alt="Gorge" width="150" height="200">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="./images/jumping.jpg" onclick="currentSlide(11)" alt="Waterfall Jumping" width="150" height="200">
+			</div>
+
+		</div>
+	</div>
 	
 	<!-- SUBSCRIBE FORM -->
 	
@@ -124,6 +273,7 @@
 	
 			<br><br><br><br><br>
 		
+			<script src="./js/one_page_website.js"></script>
 	</body>
 	
 	
