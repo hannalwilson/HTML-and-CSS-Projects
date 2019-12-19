@@ -7,7 +7,7 @@ body {
     opacity: 1;
     transition: 3s opacity;
     letter-spacing: .2vw;
-    font-size: 1.5vw;
+    font-size: 1vw;
 }
 
 body.fade-out {
@@ -225,8 +225,8 @@ body.fade-out {
     float: left;
     width: 50%;
     padding: 10px;
-    padding-top: 3%;
-    height: 400px;
+    padding-top: 1%;
+    height: 525px;
     background-color: #dbe7db;
 }
 
@@ -234,8 +234,8 @@ body.fade-out {
     float: left;
     width: 50%;
     padding: 10px;
-    padding-top: 1.9%;
-    height: 400px;
+    padding-top: 7%;
+    height: 525px;
     background-color: #4d4d4d;
 }
 
