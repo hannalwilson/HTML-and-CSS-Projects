@@ -258,7 +258,7 @@ p {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     text-align: justify;
     letter-spacing: .1vw;
-    font-size: 1.5vw;
+    font-size: 1.35vw;
     padding-left: 1vw;
     padding-right: 1vw;
 }
@@ -319,12 +319,13 @@ img {
   
   /* POPUP */
   .form-popup {
-    border: 3px solid #f0f1f0;
+    border: 3px solid #e4f8e4;
     z-index: 8;
     display: none;
     position: fixed;
     bottom: 6px;
     right: 6px;
+    background-color: #e4f8e4;
   }
   
   .form-container {
@@ -419,3 +420,4 @@ footer {
     padding: 2%;
     background-color: white;
 }
+
